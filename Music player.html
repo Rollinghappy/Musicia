@@ -4,58 +4,7 @@
 <head>
     <title>Musicia</title>
     <link rel="icon" href="https://i.imgur.com/HDQ8gys.png" type="image/icon type">
-    <style>
-        @font-face {
-            font-family: wob;
-            src: url(white_on_black-webfont.woff);
-        }
-        @font-face {
-            font-family: superfoods;
-            src: url(Super\ Foods.woff);
-        }
-        @font-face {
-            font-family: nasal;
-            src: url(nasalization-rg.woff);
-        }
-        #myVideo {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%; 
-            min-height: 100%;
-            z-index: -1;
-        }
-        .main_title{
-            text-align: center;
-            font-size: 100px;
-            color: azure;
-            font-family: wob;
-            margin-top:15%;
-        }
-        .secondary_title{
-            text-align: center;
-            font-size: 40px;
-            font-family:'superfoods';
-            color: bisque;
-        }
-        .content_box{
-            background-color: rgba(0, 0, 0, 0.5);
-            margin-top: 25%;
-        }
-        p{
-            text-align: center;
-            color: whitesmoke;
-            font-size: x-large;
-            font-family: nasal;
-        }
-        h2{
-            text-align: center;
-            color: whitesmoke;
-            font-size: 50px;
-            font-family: nasal;
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <video autoplay muted loop id="myVideo">
@@ -67,8 +16,32 @@
 
     <div class="content_box">
         <h2>WHAT IS MUSICIA</h2>
-        <p>Musicia is an online platform for you to listen to your favourite music without any interruptions</p>
+        <p class="para">Musicia is an online platform for you to listen to your favourite music without any interruptions</p>
+        <br><br><br><br>
+        <h2>START LISTENING</h2>
+        <br><br><br>
     </div>
+    <a href="music files/metamorphosis.html" target="_blank">
+    <button class="custom-button" id="metamorphosis">
+        <img id="play" src="C:\Users\fnafb\OneDrive\Desktop\Music player\play.png" style="height: 20px; margin-left: 10px; float: left; margin-top: 15px;">
+        <img src="https://i.scdn.co/image/ab67616d00001e02b852a616ae3a49a1f6b0f16e"  style="height: 50px; margin-left: 15px; float: left;">
+        <p style="margin-top:15px; margin-left: 120px;">Metamorphosis</p>
+    </button>
+    </a>
+    <a href="music files/starboy.html" target="_blank">
+    <button class="custom-button" id="starboy">
+        <img id="play" src="C:\Users\fnafb\OneDrive\Desktop\Music player\play.png" style="height: 20px; margin-left: 10px; float: left; margin-top: 15px;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png"  style="height: 50px; margin-left: 15px; float: left;">
+        <p style="margin-top:15px; margin-left: 120px;">Starboy</p>
+    </button>
+    </a>
+    <a href="music files/billie jean.html">
+        <button class="custom-button" id="starboy">
+            <img id="play" src="C:\Users\fnafb\OneDrive\Desktop\Music player\play.png" style="height: 20px; margin-left: 10px; float: left; margin-top: 15px;">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png"  style="height: 50px; margin-left: 15px; float: left;">
+            <p style="margin-top:15px; margin-left: 120px;">Billie Jean</p>
+        </button>
+    </a>
 </body>
 
 

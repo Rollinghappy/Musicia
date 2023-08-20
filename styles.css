@@ -1,0 +1,92 @@
+@font-face {
+    font-family: wob;
+    src: url(white_on_black-webfont.woff);
+}
+@font-face {
+    font-family: superfoods;
+    src: url(Super\ Foods.woff);
+}
+@font-face {
+    font-family: nasal;
+    src: url(nasalization-rg.woff);
+}
+#myVideo {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+.main_title{
+    text-align: center;
+    font-size: 100px;
+    color: azure;
+    font-family: wob;
+    margin-top:15%;
+}
+.secondary_title{
+    text-align: center;
+    font-size: 40px;
+    font-family:'superfoods';
+    color: bisque;
+}
+.content_box{
+    background-color: rgba(0, 0, 0);
+    margin-top: 100vh;
+    width: 100%;
+}
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+.custom-button {
+    font-size: larger;
+    font-family: 'lucida sans';
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    background-color: #1b1b1b;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    border-bottom: 0.2px solid black;
+  }
+.custom-button:hover {
+    background-color: #afafafa8;
+}
+.audio-controls {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+.audio-controls button,
+.audio-controls input {
+    margin: 0 5px;
+}
+.para{
+    text-align: center;
+    color: whitesmoke;
+    font-size: x-large;
+    font-family: nasal;
+}
+h2{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: nasal;
+    margin-bottom: 5px;
+}
