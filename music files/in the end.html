@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Linkin Park - In the End</title>
+    <link rel="icon" href="https://i.imgur.com/HDQ8gys.png" type="image/icon type">
+    <link rel="stylesheet" href="player_styles.css">
+    <style>
+        body{
+            background-color:rgb(34, 34, 34);
+            background-image: url('https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-x: center;
+            background-size:50%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>In the End</h1>
+        <p>Linkin Park</p>
+    </div>
+    <div class="box">
+        <audio src="In The End.mp3" id="song"></audio>
+        <input type="range" name="" id="progress" value="0">
+    </div>
+    <div class="controls">
+        <div onclick="backward()"><img src="backward.png" width="25px" style="margin-right: 15vw;"></div>
+        <div onclick="playPause()"><img src="play.png" width="40px" id="ctrlIcon"></div>
+        <div onclick="forward()"><img src="forward.png" width="25px"style="margin-left: 15vw;"></div>
+    </div>
+    
+    <script>
+        let progress=document.getElementById("progress");
+        let song=document.getElementById("song");
+        let ctrlIcon=document.getElementById("ctrlIcon");
+        song.onloadedmetadata = function(){
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+        function playPause(){
+            if (song.paused) {
+                song.play();
+                ctrlIcon.src = "pause.png";
+            } else {
+                song.pause();
+                ctrlIcon.src = "play.png";
+            }
+        }
+        if(song.play){
+            setInterval(()=>{
+                progress.value = song.currentTime;
+            },500);
+        }
+        progress.onchange = function(){
+            song.currentTime = progress.value;
+        }
+        function forward(){
+            song.currentTime = song.currentTime+10;
+            progress.value = progress.value+10;
+        }
+        function backward(){
+            song.currentTime = song.currentTime-10;
+            progress.value = progress.value-10;
+        }
+            
+    </script>
+</body>
+</html>
